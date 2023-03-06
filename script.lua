@@ -1,18 +1,6 @@
 lmc_assign_keyboard("MACROS")
 
-function holdshift(callback)
-    lmc_send_input(16,0,0)
-    callback()
-    lmc_send_input(16,0,2)
-end
-function holdctrl(callback)
-    lmc_send_input(17,0,0)
-    callback()
-    lmc_send_input(17,0,2)
-end
-
 down = 0
-
 
 lmc_set_handler("MACROS", function(btn, dir)
 
